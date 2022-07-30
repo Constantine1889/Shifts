@@ -1,6 +1,7 @@
 const express = require('express')
 require('dotenv').config()
 const cors = require('cors')
+
 const router = require('./routers/index')
 const errorHandler = require('./middlewares/ErrorHandlingMiddleware')
 
@@ -11,10 +12,10 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use('/api',router)
+ 
 
 
-
-async function start() {
+const start = async () => {
     try {
         app.listen(PORT,()=>console.log(`server started on port ${PORT}`))
     } catch (error) {

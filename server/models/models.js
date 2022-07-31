@@ -1,14 +1,14 @@
 const db = require('../db ')
 
 const User = db.model('User',new db.Schema({
-    firstName:{type:String,required:true},
-    lastName:{type:String,required:true},
+    firstName:String,
+    lastName:String,
     password:{type:String,required:true},
     role:{type:String,required:true,default:'EMPLOYEE'},
     email:{type:String,required:true},
     maxShifts:{type:Number,max:6},
     minShifts:{type:Number,default:5},
-    job:{type:String,required:true},
+    job:{type:String},
     active:{type:Boolean,default:true},
     siteWorkAt:{
         type:db.Schema.Types.ObjectId,
@@ -52,6 +52,7 @@ const Shift = db.model('Shift',new db.Schema({
 }))
 
 const Constraints = db.model('Constraint',new db.Schema({
+    default:{type:Boolean,default:false},
     employee:{
         type:db.Schema.Types.ObjectId,
         ref:'User',

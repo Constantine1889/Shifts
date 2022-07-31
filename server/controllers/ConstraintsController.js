@@ -1,8 +1,8 @@
-const ApiError = require('../error/ApiError')
 class ConstraintsController {
     async create(req,res) {}
 
     async getOne(req,res) {
+        //for test
         const {id} = req.params
         return res.json({id:`${id}`})
     }

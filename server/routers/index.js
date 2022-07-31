@@ -11,6 +11,12 @@ const scheduleRouter = require('./ScheduleRouter')
 
 router.use('/user',userRouter)
 router.use('/constraints',constraintsRouter)
+router.use('/workday',workDayRouter)
+router.use('/position',positionRouter)
+router.use('/shift',shiftRouter)
+router.use('/site',siteRouter)
+router.use('/schedule',scheduleRouter)
+
  
 
 

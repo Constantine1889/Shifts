@@ -1,7 +1,12 @@
 class ConstraintsController {
-    async create(req,res) {}
+    async create(req,res) {
+        const {id} = req.params
+       
+        
+    }
 
     async getOne(req,res) {
+
         //for test
         const {id} = req.params
         return res.json({id:`${id}`})

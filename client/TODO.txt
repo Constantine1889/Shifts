@@ -1,0 +1,8 @@
+1 Routes/private routes
+2 Pages
+3 Authorization
+4 http
+5 store/ mobx (global state)
+6 modals (add/update employee,add site/positions/shifts,fill constraints,messages?)
+7 componennts 
+8 store token

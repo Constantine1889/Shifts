@@ -1,0 +1,5 @@
+1 finish CRUD for models
+2 schedule building function
+3 separate logic from controllers
+4 create file for consts
+5 email service (sending schedule in csv,reminder)

@@ -12,5 +12,4 @@ router.get('/auth',authMiddleware,userController.check)
 router.get('/employees',checkRole("ADMIN"),userController.getAll)
 router.put('/employees/:id',userController.updateOne)
 
-
 module.exports = router

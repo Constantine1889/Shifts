@@ -1,10 +1,9 @@
 const Router = require('express')
 const router = new Router()
-const constraintsController = require('../controllers/ConstraintsController')
+const siteController = require('../controllers/SiteController')
 
-router.post('/:id',constraintsController.create)
-router.get('/',constraintsController.getAll)
-router.get('/:id',constraintsController.getOne)
-router.put('/:id',constraintsController.updateOne)
+router.post('/',siteController.create)
+router.get('/',siteController.getAll)
+
 
 module.exports = router

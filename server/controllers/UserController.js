@@ -58,11 +58,12 @@ class UserController {
 
     async getAll(req,res) {
         const docs = await User.find({active:true})
-        res.json(docs)
+        return res.json(docs)
     }
 
     async updateOne(req,res) {
-        
+        const {id} = req.params
+        await User.findByIdAndUpdate(id,req.body) 
     }
 }
 

@@ -17,7 +17,7 @@ const User = db.model('User',new db.Schema({
 }))
 
 const Site = db.model('Site',new db.Schema({
-    siteName:{type:String,required:true},
+    siteName:{type:String},
     positions:[{
         type:db.Schema.Types.ObjectId,
         ref:'Position'
@@ -31,6 +31,10 @@ const Position = db.model('Position',new db.Schema({
         type:db.Schema.Types.ObjectId,
         ref:'WorkDay'
     }],
+    siteID:{
+        type:db.Schema.Types.ObjectId,
+        ref:'Site'
+    },
 }))
 
 const WorkDay = db.model('WorkDay',new db.Schema({
@@ -38,7 +42,11 @@ const WorkDay = db.model('WorkDay',new db.Schema({
   shifts:[{
     type:db.Schema.Types.ObjectId,
         ref:'Shift'
-  }]
+  }],
+  positionID: {
+    type:db.Schema.Types.ObjectId,
+    ref:'Position'
+  }
 }
 ))
 

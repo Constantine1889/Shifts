@@ -9,6 +9,7 @@ class ConstraintsController {
 
         //for test
         const {id} = req.params
+        console.log(id)
         return res.json({id:`${id}`})
     }
 

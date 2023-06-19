@@ -6,8 +6,10 @@ import Employee from '../pages/Employee'
 import PageNotFound from '../pages/NotFoundPage'
 
 const AppRouter = () => {
+  const isAuth = true
     return (
        <Routes>
+        
          <Route path="/" element={<Admin/>}/>
          <Route path="/auth" element={<Auth/>}/>
          <Route path="/employee" element={<Employee/>}/>

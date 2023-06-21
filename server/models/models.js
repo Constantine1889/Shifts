@@ -21,6 +21,10 @@ const Site = db.model('Site',new db.Schema({
     positions:[{
         type:db.Schema.Types.ObjectId,
         ref:'Position'
+    }],
+    admins:[{
+        type:db.Schema.Types.ObjectId,
+        ref:'User'
     }]
 }))
 

@@ -1,0 +1,5 @@
+uri https://konstantinpogorelov.documents.azure.com:443/
+pk OQrvc3qBnK9c2WTKOGGd8jZefE0po739rhM5w7vzY5sa3Klk4DpZlVKEjXaSrVMBRxryTzL1ItpwI5zJnrsR8Q==
+
+
+mongo pass : UTh2LAcbitjhbzfM

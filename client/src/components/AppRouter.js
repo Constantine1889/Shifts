@@ -12,6 +12,12 @@ const AppRouter = observer(() => {
   const {userStore,scheduleStore} = useContext(Context)
   const {isAuth,user} = userStore
 
+
+  /**
+   * Routing 
+   * 
+   * add role check after html and styling!!!
+   */
   return (
        <Routes>
         <Route path='/' element={<Layuot/>}>
@@ -20,11 +26,11 @@ const AppRouter = observer(() => {
             <Route key={path} path={path} element={<Component/>}/>
           )}
 
-          {(isAuth && user.role==='ADMIN') && authAdminRoutes.map(({path,Component})=> 
+          {(isAuth ) && authAdminRoutes.map(({path,Component})=> 
           <Route key={path} path={path} element={<Component/>}/>
           )}
 
-           {(isAuth && user.role==='EMPLOYEE') && authEmployeeRoutes.map(({path,Component})=> 
+           {(isAuth ) && authEmployeeRoutes.map(({path,Component})=> 
           <Route key={path} path={path} element={<Component/>}/>
           )}
 

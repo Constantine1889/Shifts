@@ -4,6 +4,9 @@ import {BrowserRouter} from 'react-router-dom'
 import App from './App'
 import ScheduleStore from './store/ScheduleStore'
 import UserStore from './store/UserStore'
+import './styles/normalilze.css'
+import './styles/reset.css'
+import './styles/common.scss'
 
 export const Context = createContext(null)
 

@@ -6,18 +6,7 @@ import date from 'date.js'
 const DatesBar = () => {
     
     return (
-        <>
-        {weekDays.map((day)=>{
-            return (
-                <Col key={day} className='border'>
-                     <Stack>
-                             <div>{day}</div>
-                             <div>{date(day).toLocaleDateString('en-gb',{day:'2-digit',month:'2-digit'} )}</div>
-                      </Stack> 
-                </Col>
-            )
-        })}
-        </>
+     <div>Dates Container</div>
     );
 }
 

@@ -10,8 +10,6 @@ import { authAdminRoutes, publicRoutes,authEmployeeRoutes } from '../routes';
 const AppRouter = observer(() => {
 
   const {userStore,scheduleStore} = useContext(Context)
-  // console.log(scheduleStore.schedule.pos1.get('sunday')[0].employee)
-  // console.log(scheduleStore.positionNames)
   const {isAuth,user} = userStore
 
   return (

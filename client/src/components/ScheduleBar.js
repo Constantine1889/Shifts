@@ -8,18 +8,7 @@ const schedule = scheduleStore.schedule()
 
 const ScheduleBar = () => {
     return (
-       <>
-        {scheduleStore.positionNames().map((pos,)=>{
-           
-            return (
-                <Row key={pos}>
-                <Col className='border d-flex align-items-center justify-content-center'>{pos}</Col>
-                    {[...schedule[pos]]}
-                </Row>
-            )
-        })}
-       
-       </>
+        <div>Schedule Container</div>
     );
 }
 

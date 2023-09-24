@@ -1,24 +1,42 @@
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+
+
 #root {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Roboto',sans-serif;
+    font-size: 2em;
 }
 
 header {
     display: flex;
     align-items: center;
-    padding: 2em 4em;
-    background-color: green;
+    padding: 1em 4em;
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .max-width {
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 main {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
+
 .max-width {
-    width: 100%;
-    max-width: 960px;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
 }

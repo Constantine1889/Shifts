@@ -1,0 +1,13 @@
+.admin {
+    width: 100%;
+    display: flex;
+
+    aside {
+        outline:solid 1px;
+        flex:1;
+    }
+
+    .scheduleDashboard {
+        flex:4;
+    }
+}

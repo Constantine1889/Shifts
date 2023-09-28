@@ -10,9 +10,9 @@ const NavBar = observer(() => {
       <header>
         <div className='max-width'>
            <div className='logo'>Shifts</div>
-           <Button variant='outlined' size='large'  sx={{color:'white'}}> 
-            Sign In
-           </Button>
+            {false && <Button variant='outlined' size='large'  sx={{color:'white'}}> 
+            Sign Out
+           </Button>}
         </div>
         
       </header>

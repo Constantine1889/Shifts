@@ -1,5 +1,8 @@
 import React, { useContext } from 'react';
 import { Context } from '../index';
+import EmployeesList from '../components/EmployeesList/EmployeesList';
+import Container from '@mui/material/Container';
+import '../styles/admin.scss'
 
 
 
@@ -11,7 +14,15 @@ const Admin = () => {
 
 
     return (
-    <div>Admin Page</div>
+      <div className="admin">
+        <EmployeesList/>
+        <Container element='div' className='scheduleDashboard'>
+        S
+        </Container>
+        <aside className='buttons'>
+        B
+        </aside>
+      </div>
     );
 }
 
